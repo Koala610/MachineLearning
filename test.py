@@ -19,7 +19,7 @@ carRGB = cv2.cvtColor(imgCar,cv2.COLOR_BGR2RGB)
 
 
 plt.imshow(carRGB[...,2],cmap='gray')
-plt.show()
+#plt.show()
 
 """
 grayManual = imgCar[...,0] * 0.114 + imgCar[...,1] * 0.587 + imgCar[...,2] * 0.299
@@ -28,8 +28,10 @@ grayManual = imgCar[...,0] * 0.114 + imgCar[...,1] * 0.587 + imgCar[...,2] * 0.2
 #plt.show()
 
 """
-img2 = np.full((500,500),255,dtype = np.uint8)
-img2[200:300,200:300] = 0
+img2 = np.full((500,500),0,dtype = np.uint8)
+img2[200:300,10:11] = 255
+
+print(img[1][1])
 plt.imshow(img2,cmap = 'gray')
 plt.show()
 """

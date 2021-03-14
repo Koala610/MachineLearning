@@ -56,6 +56,7 @@ def getDrawProjectionVer(lp, verp):
     graphicVer = np.zeros((lp.shape[0], w), dtype = "uint8")
 
     for i in range(len(verp2)):
+        
         graphicVer[i, 0:verp2[i]] = 255
 
     return cv2.cvtColor(graphicVer, cv2.COLOR_GRAY2BGR)

@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
     for i in xrange(10000):
         img, text = genSymbolImg(kw = 5, kh = 5, blur = 1)
-        print text
+        print(text)
 
         cv2.imshow("W", img)
         k = cv2.waitKey(0)
